@@ -13,8 +13,8 @@ test("test new note creation", () => {
     expect(note.text).toBe("this is the text");
 })
 test("validate note", () => {
-    const note = {title: "test", text: "this is a string"}
-    const invalidNote = {title: 2, text: "invalid"}
+    const note = {title: "test", text: "this is a string", id: "1"}
+    const invalidNote = {title: 2, text: "invalid", id: 3}
 
     const test = validateNote(note);
     const test2 = validateNote(invalidNote);
